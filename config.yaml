@@ -1,0 +1,15 @@
+# usagemon 配置
+# 说明: 纯 CLI 子项目, 无常驻进程, 不注册 supervisor unit。
+# 数据源固定为 HERMES_HOME(.qbot) 下的会话与日志, 只读。
+data:
+  sessions_dir: ".qbot/sessions"
+  agent_log: ".qbot/logs/agent.log"
+
+estimation:
+  cjk_token_per_char: 0.7    # 中日韩字符 → token 系数
+  other_token_per_4char: 1   # 其他字符 4 个 ≈ 1 token
+  growth_model: linear       # 累计消耗 ≈ 终态上下文 * assistant轮数/2
+
+health:
+  lookback_hours: 1          # --health 只看最近 N 小时
+  silent_when_clean: true    # 无事时零输出(供 no_agent cron 看门狗)
