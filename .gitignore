@@ -1,0 +1,7 @@
+# 运行时 / 生成物不入库
+__pycache__/
+*.pyc
+.venv/
+.qbot/
+logs/
+*.log
