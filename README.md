@@ -68,4 +68,10 @@ usagemon · 近7天 (自 2026-08-27 10:20:00)
 - `--health` 依赖 `agent.log` 里上下文压缩 / API 失败的固定格式；Hermes 改日志格式这里要跟着调
   （正则 `COMPRESS_RE` / `FAIL_RE` 在脚本头部）。
 
+## 赞助
+
+如果这个项目对你有用，欢迎赞助支持一下，请我喝杯奶茶：
+
+![sponsor](assets/sponsor.jpg)
+
 —— 幻日出品
